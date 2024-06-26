@@ -1,7 +1,43 @@
 body {
+    font-family: Arial, sans-serif;
+    background-color: f2f2f2;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+color: #ddd;
+}
+article {
+padding: 20px;
+background-color: white;
+margin: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
 main {
     display: flex;
     flex-direction: row;
@@ -14,4 +50,70 @@ article {
 aside {
     flex: 1;
     overflow-y: auto;
+}
+.logo {
+    font-size: 36px; 
+    margin-right: 10px;
+}
+article {
+    font-size: 16px;
+    line-height: 1.6;
+}
+article h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+article p {
+    color: #666;
+    margin: 25px;
+}
+h1 {
+    color: red;
+    margin-top: 20px;
+}
+h2 {
+    color: #666;
+    margin-top: 15px;
+}
+h3 {
+    color: #999;
+    margin-top: 10px;
+}
+aside {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0, 0, 10px rgba(0, 0, 0, 0.1)
+}
+aside img {
+    justify-items: center;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+#learners {
+    margin-top: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+table th td {
+    border: 1px solid #333;
+}
+th td {
+    padding: 8px;
+    text-align: left;
+}
+footer {
+    background-color: #220e0e;
+    color: #fff;
 }
