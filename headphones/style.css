@@ -4,8 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 .hero-background {
     background-image: url(images/headphones_hero_1.jpg);
+    max-width: 1400px;
+    max-height: 800px;
 
 }
 
@@ -81,6 +89,9 @@ nav ul li a:hover {
         left: 0;
         width: 100%;
     }
+    .header {
+        padding: 0 auto;
+    }
 
     .menu-toggle:checked + .hamburger + .nav-links {
         display: flex;
@@ -103,9 +114,110 @@ nav ul li a:hover {
         transform: rotate(-45deg) translate(6px, -6px);
     }
 }
-
-
 .container {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+ 
+ }
+.container h1 {
+    color: white;
+    padding-top: 150px;
+}
+.lorem p {
+    color: #f0f0f0;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+.lorem button  {
+    font-size: 18px;
+    font-weight: bold;
+    padding:10px 20px;
+    border-radius: 20px;
+    background-color: #da2e2e;
+    color: #f0f0f0;
+    margin: 30px;
+    cursor: pointer;
+}
+
+button:hover, button:active {
+    opacity: 0.9;
+}
+.ipsum p {
+    color: #f0f0f0;
+    font-size: 16px;
+    margin: 0 70px;
+    padding: 40px 150px;
+}
+@media (max-width: 480px) {
+    body {
+        background-color: #f0f0f0; 
+    }
+
+    .container {
+        padding: 10px;
+        
+    }
+}
+
+.what-we-do {
+    background-color: white;
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+.content-container {
+   text-align: center;
+    width: 637px;
+height: 184px;
+top: 910px;
+left: 382px;
+gap: 0px;
+opacity: 0px
+
+
+}
+
+.what-we-do h2 {
+    margin-bottom: 20px;
+}
+
+.what-we-do p {
+    margin-bottom: 30px;
+    
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1002px;
+height: 193px;
+top: 1191px;
+left: 200px;
+gap: 0px;
+opacity: 0px;
+}
+
+.icon-box {
+    width: 150px;
+    text-align: center;
+}
+
+.icon-box .icon {
+    background-color: #FF4136;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+}
+
+.icon-box p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* .container {
     opacity: 0px;
     text-align: center;
     max-width: 1000px;
@@ -169,4 +281,4 @@ button:hover, button:active {
 }
 .icons h3{
     font-size: 18px;
-}
+}  */
