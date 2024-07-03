@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-header {
+.smile {
     background-image: url(images/Object.png);
 }
 
@@ -30,7 +30,6 @@ nav ul li a {
 .container1 {
     text-align: center;
     padding: 20px;
-    background-image: url(images/Object.png);    
 
 }
 
