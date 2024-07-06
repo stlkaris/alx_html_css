@@ -8,7 +8,7 @@
     position: absolute;
     top: 50%;
     left: 40%;
-    border-top: 120px solid rgb(11, 238, 162);
+    border-top: 120px solid rgb(238, 253, 18);
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
     width: 120px;
@@ -18,7 +18,7 @@
 .pentagon::after {
     position: absolute;
     content: "";
-    border-bottom: 155px solid  rgb(11, 238, 162);;
+    border-bottom: 155px solid  rgb(238, 253, 18);;
     border-left: 145px solid transparent;
     border-right: 205px solid transparent;
     left: -80px;
