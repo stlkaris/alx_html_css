@@ -27,8 +27,9 @@ main {
 
 .header img {
     height: 30px;
-
+    margin-left: 150px;
 }
+
 .hero-background {
     width: 100%;
     height: 800px;
@@ -46,22 +47,21 @@ main {
     margin: 0 auto;
     padding: 20px;
     text-align: center;
- 
- }
- 
- .container h1 {
+}
+
+.container h1 {
     font-size: 24px;
     color: #f0f0f0;
     margin-top: 200px;
- }
+}
 
- .lorem p {
+.lorem p {
     font-size: 18px;
-    margin-bottom: 20px;
     color: #f0f0f0;
- }
+    margin-bottom: 20px;
+}
 
- .lorem button {
+.lorem button {
     font-size: 12px;
     padding: 10px 20px;
     border: none;
@@ -70,41 +70,42 @@ main {
     background-color: #da2e2e;
     color: #fff;
     margin-bottom: 50px;
- }
+}
 
- .ipsum {
+.ipsum {
     margin-bottom: 20px;
- }
+}
 
- .ipsum p {
+.ipsum p {
     font-size: 18px;
     color: #f0f0f0;
     margin: 0 20px;
     padding: 20px 150px 10px;
-    
- }
+}
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 15px;
-
 }
+
 .nav-links {
     list-style-type: none;
     display: flex;
-  
-    
+    margin-right: 100px;
 }
+
 .nav-links li {
     margin: 0px 10px;
 }
+
 .nav-links a {
     text-decoration: none;
     color: #f0f0f0;
     font-weight: bold;
 }
+
 .nav-links a:hover {
     color: #FF6565;
 }
@@ -116,8 +117,6 @@ nav {
     top: 50%;
     transform: translate(-50%);
 }
-
-
 
 .hamburger .bar {
     height: 2px;
@@ -136,16 +135,19 @@ nav {
     display: flex;
 }
 
-
-
 @media (max-width: 768px) {
     main {
         padding-top: 250px;
     }
-    
-    .header{ 
+ 
+    .header {
         padding: 20px 30px;
     }
+    .header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
 
     .hero-background {
         height: 600px;
@@ -158,13 +160,12 @@ nav {
 
     .ipsum p {
         padding: 20px;
-    } 
+    }
 
-       nav {
+    nav {
         justify-content: space-between;
     }
 
-  
     .nav-links li {
         text-align: center;
         margin: 10px 0;
@@ -172,7 +173,6 @@ nav {
 
     .hamburger {
         display: flex;
-        
     }
 
     .nav-links {
@@ -180,15 +180,13 @@ nav {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        left: 0;
+        left: 0%;
         width: 100%;
     }
 
     .menu-toggle:checked + .hamburger + .nav-links {
         display: flex;
-        
     }
-
 
     .menu-toggle:checked + .hamburger .bar:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
@@ -201,14 +199,41 @@ nav {
     .menu-toggle:checked + .hamburger .bar:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -6px);
     }
+
+    .content-container {
+        padding: 50px 20px;
+    }
+
+    .icon-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .results {
+        flex-direction: column;
+    }
+
+    .form-container button {
+        margin: 20px 0;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-icons {
+        display: flex;
+        align-items: center;
+    }
 }
+
 @media (max-width: 480px) {
     body {
-        background-color: #f0f0f0; 
+        background-color: #f0f0f0;
     }
 
     .header {
-       padding: 10px 20px;
+        padding: 10px 20px;
     }
 
     .hero-background {
@@ -216,7 +241,7 @@ nav {
     }
 
     .container {
-        padding: 10px; 
+        padding: 10px;
     }
 
     .container h1 {
@@ -236,12 +261,16 @@ nav {
         margin: 5px 0;
     }
 
-    .what-we-do, .dark-section, .form-container {
+    .what-we-do,
+    .dark-section,
+    .form-container {
         padding: 20px;
     }
-    
 }
-.what-we-do, .dark-section, .form-container {
+
+.what-we-do,
+.dark-section,
+.form-container {
     padding: 40px 20px;
     text-align: center;
 }
@@ -258,40 +287,81 @@ nav {
     text-align: center;
     margin: 10px;
 }
+
 .results {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+   
+    margin-top: 50px;
 }
-
 
 .result-box {
     flex: 1 1 200px;
     position: relative;
     margin: 10px;
+    text-align: center;
+    padding: 20px;
+    min-height: 250px;
+    overflow: hidden;
+
 }
 
 .overlay {
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 40%;
+    left: 25%;
     transform: translate(-50% -50%);
     color: #fff;
     text-align: center;
-
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
+.content-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1000px;
+}
+
+.content-container h2 {
+    margin-bottom: 30px;
+}
+
+
 .dark-section {
-    background-color: #001F3F;
-    color: #fff;
-    padding: 50px 0;
-    text-align: center;
-    max-width: 1400px;
-    max-height: 650px;
-    padding: 100px 80px;
     background-image: url(images/headphones_hero_2.jpg);
+    background-color: #001F3F;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 0;
 }
 
+.dark-section::after {
+    content: "";
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    background-color: yellow;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dark-section .p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dark-section .p1 {
+    font-size: 12px;
+}
 
 .form-container {
     display: flex;
@@ -300,6 +370,7 @@ nav {
     padding: 20px;
     background-color: blueviolet;
 }
+
 .form-container form {
     width: 100%;
     max-width: 600px;
@@ -307,13 +378,15 @@ nav {
     border-radius: 8px;
 }
 
-.form-container input,
-.form-container label,
-.form-container button {
+.form-container input {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
     font-size: 12px;
+}
+
+.form-container label {
+    float: left;
 }
 
 .form-container button {
@@ -323,136 +396,45 @@ nav {
     color: #f0f0f0;
     font-size: 16px;
     font-weight: bold;
-    padding: 10px;
-    }
+    padding: 10px 40px;
+    border-radius: 20px;
+}
 
- .form-container button:hover {
-        background-color: blue;
-    }
+.form-container button:hover {
+    background-color: blue;
+}
 
- footer {
-        background: #071629;
-        padding: 20px 10px;
-        text-align: center;
-     }
 
- .logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-  .footer-icons {
+footer {
+    background: #071629;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
-   }
-
- .footer-icons img {
-    justify-content: space-between;
-    margin-left: 10px;
-    }
-    
-    
- .footer-p {
-        color: #FFFFFF;
-        text-align: center;
-      margin: 20px 10px;
-    }
-    
-
-
-
-
-
-/*.container h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: white;
-    padding-top: 150px;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
 }
-.lorem p {
-    color: #f0f0f0;
-    padding-bottom: 30px;
-    font-size: 16px;
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 200px;
+}
+
+.logo-footer {
+    max-height: 50px;
     margin-bottom: 20px;
 }
-.lorem button  {
-    font-size: 18px;
-    font-weight: bold;
-    padding:10px 20px;
-    border-radius: 20px;
-    background-color: #da2e2e;
-    color: #f0f0f0;
-    margin: 30px;
-    cursor: pointer;
-    border: none;
+.img {
+    padding-right: 250px;
+    
 }
-
-button:hover, button:active {
-    opacity: 0.9;
-}
-.ipsum p {
-    color: #f0f0f0;
-    font-size: 16px;
-    margin: 0 70px;
-    padding: 40px 150px;
-}
-
-
-.what-we-do h2 {
-    margin-bottom: 20px;
-    font-size: 32px;
-}
-
-.what-we-do p {
-    margin-bottom: 30px;
-    font-size: 16px;
-  
-}
-.what-we-do .content-container .p {
-    padding: 20px 80px;
-} 
-
-
-.icon-box p:first-child {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-
-
-
-.result-box p:last-child {
-    font-size: 14px;
-    margin: 5px 0 0;
-}
-
-
-.content-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-.content-container h2 {
-    margin-bottom: 30px;
-}
-
-
-.result-box p:first-child {
-    font-size: 24px;
-    margin: 0;
-}
-
-.result-box p:last-child {
-    font-size: 14px;
-    margin: 5px 0 0;
-}   
-
-
-
-.form-container h2 {
-    font-size: 26px;
-    text-align: center;
-} 
-
- */
