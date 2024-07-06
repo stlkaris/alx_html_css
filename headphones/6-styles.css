@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.pentagon {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    border-top: 120px solid rgb(11, 238, 162);
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    width: 120px;
+    height: 0;
+
+}
+.pentagon::after {
+    position: absolute;
+    content: "";
+    border-bottom: 155px solid  rgb(11, 238, 162);;
+    border-left: 145px solid transparent;
+    border-right: 205px solid transparent;
+    left: -80px;
+    bottom: 120px;
+
+
+}

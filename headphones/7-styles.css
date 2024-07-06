@@ -109,7 +109,7 @@ nav {
     color: #FF6565;
 }
 
-.hamburger {
+/* .hamburger {
     display: none;
     position: absolute;
     left: 20px;
@@ -126,7 +126,7 @@ nav {
     background-color: white;
     border-radius: 10px;
     transition: all 0.3s ease;
-}
+} */
 
 .menu-toggle {
     display: none;
@@ -241,6 +241,7 @@ nav {
     }
     
 }
+
 .what-we-do, .dark-section, .form-container {
     padding: 40px 20px;
     text-align: center;
@@ -265,7 +266,6 @@ nav {
 
 }
 
-
 .result-box {
     flex: 1 1 200px;
     position: relative;
@@ -275,12 +275,23 @@ nav {
 .overlay {
     position: absolute;
     top: 30%;
-    left: 20%;
+    left: 25%;
     transform: translate(-50% -50%);
     color: #fff;
     text-align: center;
 
 }
+
+.content-container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.content-container h2 {
+    margin-bottom: 30px;
+}
+.content-container p {
+}
+
 .dark-section {
     background-color: #001F3F;
     color: #fff;
@@ -291,6 +302,7 @@ nav {
     padding: 100px 80px;
     background-image: url(images/headphones_hero_2.jpg);
 }
+
 
 
 .form-container {
@@ -307,13 +319,15 @@ nav {
     border-radius: 8px;
 }
 
-.form-container input,
-.form-container label,
-.form-container button {
+.form-container input {
     width: 100%;
     margin: 10px 0;
     padding: 10px;
     font-size: 12px;
+}
+
+.form-container label {
+    float: left;
 }
 
 .form-container button {
@@ -323,14 +337,50 @@ nav {
     color: #f0f0f0;
     font-size: 16px;
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 40px;
+    border-radius: 20px;
     }
 
  .form-container button:hover {
         background-color: blue;
     }
 
- footer {
+    footer {
+        background-color: #0b1b2b;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    
+
+    .footer-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        margin-left: 150px;
+    }
+    
+    .footer-icons img {
+        height: 20px;
+    }
+    
+    .footer-p {
+        margin-top: 20px; /* Adjust as needed */
+        font-size: 14px;
+    }
+
+
+
+ /* footer {
         background: #071629;
         padding: 20px 10px;
         text-align: center;
@@ -357,14 +407,21 @@ nav {
         color: #FFFFFF;
         text-align: center;
       margin: 20px 10px;
-    }
+    } */
     
 
 
 
+XXXXXXXXXXX
 
 
-/*.container h1 {
+
+
+
+
+
+/* 
+.container h1 {
     font-size: 24px;
     margin-bottom: 20px;
     color: white;
@@ -453,6 +510,6 @@ button:hover, button:active {
 .form-container h2 {
     font-size: 26px;
     text-align: center;
-} 
+}  */
 
- */
+
