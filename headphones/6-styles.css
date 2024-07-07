@@ -6,23 +6,24 @@
 
 .pentagon {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 40%;
-    border-top: 120px solid rgb(238, 253, 18);
-    border-left: 150px solid transparent;
-    border-right: 150px solid transparent;
-    width: 120px;
+    border-top: 90px solid rgb(253, 18, 18);
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    width: 90px;
     height: 0;
 
 }
-.pentagon::after {
+ .pentagon::after {
     position: absolute;
     content: "";
-    border-bottom: 155px solid  rgb(238, 253, 18);;
-    border-left: 145px solid transparent;
-    border-right: 205px solid transparent;
-    left: -80px;
-    bottom: 120px;
+    border-bottom: 90px solid  rgb(253, 18, 18);;
+    border-left: 90px solid transparent;
+    border-right: 120px solid transparent;
+    left: -60px;
+    bottom: 90px;
 
 
-}
+} 
+
